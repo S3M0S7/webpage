@@ -1,95 +1,85 @@
-/* General Reset */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #dfe7d9;
+    font-family: Georgia, serif;
 }
 
-/* Body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e6f2ff; /* light blue background */
-    color: #003366; /* dark blue text */
-    line-height: 1.6;
+/* Header */
+header {
+    background-color: #d5ebeb;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Logo and Title */
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #2f6b2f;
+    font-size: 45px;
 }
 
 /* Navigation */
-header {
-    background-color: #003366;
-    padding: 15px 0;
+nav {
+    margin-top: 15px;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.nav-links li a {
+nav a {
     text-decoration: none;
-    color: #ffffff;
+    margin: 12px;
+    color: peru;
+    font-size: 15px;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-    color: #ffcc00;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #cce6ff;
-}
-
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 16px;
+/* Content */
+.content-section {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
 }
 
 /* Gallery Section */
-.gallery {
+.gallery-section {
     text-align: center;
-    padding: 40px 20px;
 }
 
-.gallery h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.gallery-section h2 {
+    color: darkgreen;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-.gallery-container {
+/* Images */
+.gallery {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
 }
 
-.gallery-container img {
-    width: 250px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.gallery-container img:hover {
-    transform: scale(1.05);
+.gallery img {
+    width: 270px;
+    height: 450px;
 }
 
 /* Footer */
 footer {
-    background-color: #003366;
-    color: #ffffff;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
+    background-color: #cfe6c1;
+    color: cadetblue;
+    padding: 8px;
+    margin-top: 20px;
 }
